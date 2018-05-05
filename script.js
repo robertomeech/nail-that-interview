@@ -8,13 +8,17 @@ $(function(){
         let quizResults = getValue();
         // Conditionally show answer based on quiz results
         showResults(quizResults);
-    
+
     });
     
     $('.resetButton').on('click', function(){
         console.log('click');
         $('#quiz')[0].reset();
         $('.answerWrapper').hide();
+    });
+
+    $('.headerText a, .question1 a, #question2 a, #question3 a, #question4 a, #submitButton').smoothScroll()({
+        speed: 3000,
     });
     
     function getValue() {

@@ -5,43 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Job Interview Cheat Sheet</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli|Ovo" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>Nail That Interview</h1>
-            <h3>Need dat moolah? Get yourself a job interview and this app will get you the job. Guaranteed.</h3>
-            <a href="#quiz">Click Me</a>
-        </header>
-        <main>
+    <header>
+        <div class="headerWrapper">
+            <div class="headerText">
+                <h1>Nail That Interview</h1>
+                <h3>Need dat moolah? Get yourself a job interview and this app will get you the job. Guaranteed.</h3>
+                <a href="#quiz" class="smoothScroll">Click Me</a>
+            </div>
+        </div>
+    </header>
+    <main>
+         <div class="wrapper">
             <form action="" id="quiz">
-                <div class="question">
+                <div class="question question1" id="quiz" class="smoothScroll">
                     <h4>How badly do you want this job?</h4>
                         <ul>
                             <li>
-                                <input type="radio" value="1" name="howBadly" required>
-                                <label for="">I have nothing better to do.</label>
+                                <label for="" class="container">
+                                    <input type="radio" value="1" name="howBadly" required>
+                                    I have nothing better to do.
+                                </label>
                             </li>
                             <li>
-                                <input type="radio" value="2" name="howBadly" required>
-                                <label for="">My parents made me apply</label>
+                                <label for="" class="container">
+                                    <input type="radio" value="2" name="howBadly" required>
+                                    My parents made me apply
+                                </label>
                             </li>
                             <li>
-                                <input type="radio" value="3" name="howBadly" required>
-                                <label for="">I thought this was my first day.</label>
+                                <label for="" class="container">
+                                    <input type="radio" value="3" name="howBadly" required>
+                                    I thought this was my first day.
+                                </label>
                             </li>
                             <li>
-                                <input type="radio" value="4" name="howBadly" required>
-                                <label for="">This company wants ME. I should’ve been headhunted by now…</label>
+                                <label for="" class="container">
+                                    <input type="radio" value="4" name="howBadly" required>
+                                    This company wants ME. I should’ve been headhunted by now…
+                                </label>
                             </li>
                             <li>
-                                <input type="radio" value="5" name="howBadly" required>
-                                <label for="">OMG it’s my dream job.</label>
+                                <label for="" class="container">
+                                    <input type="radio" value="5" name="howBadly" required>
+                                    OMG it’s my dream job.
+                                </label>
                             </li>
                         </ul>
+                        <a href="#question2">NEXT</a>
                 </div>
-                <div class="question">
+                <div class="question smoothScroll" id="question2">
                     <h4>Is this job in your field?</h4>
                         <ul>
                             <li>
@@ -65,8 +81,9 @@
                                 <label for="">Hundo P! It was my major.</label>
                             </li>
                         </ul>
+                        <a href="#question3">NEXT</a>
                 </div>
-                <div class="question">
+                <div class="question smoothScroll" id="question3">
                     <h4>How much time will you spend preparing?</h4>
                         <ul>
                             <li>
@@ -90,8 +107,9 @@
                                 <label for="">I'll be studying for hours and hours and hours until I know everything about the company.</label>
                             </li>
                         </ul>
+                        <a href="#question4">NEXT</a>
                 </div>
-                <div class="question">
+                <div class="question smoothScroll" id="question4">
                     <h4>What will you you wear?</h4>
                         <ul>
                             <li>
@@ -115,8 +133,9 @@
                                 <label for="">Something dressy, but not too, too dressy.</label>
                             </li>
                         </ul>
+                        <a href="#question5">NEXT</a>
                 </div>
-                <div class="question">
+                <div class="question smoothScroll" id="question5">
                     <h4>How will you stand out from other applicants?</h4>
                     <ul>
                         <li>
@@ -140,42 +159,87 @@
                             <label for="">I'll ask questions about the position, talk about the weather, and show pictures of my dream dogs.</label>
                         </li>
                     </ul>
+                    <input type="submit" class="submitButton" value="Get Hired!" id="submitButton">
                 </div>
-
-                <input type="submit">
+                
             </form>
+        </main>
             <div class="answerWrapper">
-                <div class="answers">
+                <div class="answers" id="">
                     <div>
                         <h4 class="interviewQuestion">Can you tell us about yourself?</h4>
                         <p class="answer1">Errrr... What do you want to know?</p>
 
+                        <p class="answer2">HELLO I WORK</p>
+
+                        <p class="answer3">HA I WAS RIGHT</p>
+
+                        <p class="answer4">4</p>
+
+                        <p class="answer5">5</p>
+
                         <h4 class="interviewQuestion">Why do you want to work for us?</h4>
                         <p class="answer1"> I’ll be straight up with you because honesty is always the best policy. My bestie sent me a Snapchat showing off the new Fortnite skin he bought and I need to get it. Trust me, I wouldn’t be here if I wasn’t serious. I definitely need the money because I spent the last of my student loan on a Supreme t-shirt last week.</p>
+
+                        <p class="answer2">HELLO I WORK</p>
+
+                        <p class="answer3">HA I WAS RIGHT</p>
+
+                        <p class="answer4">4</p>
+
+                        <p class="answer5">5</p>
 
                         <h4 class="interviewQuestion">Why would you be a valuable asset to our team?</h4>
                         <p class="answer1"> Now we’re talkin’! I was the captain of my ultimate frisbee team in grade 7 (based on a true story) so you already know I know how to lead a team. As for being valuable… I was second runner up to the MVP… NEXT QUESTION!</p>
 
+                        <p class="answer2">HELLO I WORK</p>
+
+                        <p class="answer3">HA I WAS RIGHT</p>
+
+                        <p class="answer4">4</p>
+
+                        <p class="answer5">5</p>
+
                         <h4 class="interviewQuestion">What are your strengths and weaknesses?</h4>
                         <p class="answer1">First things first, amaryllis. Get it?! Like the flower?... That song by Iggy? No? Clearly humour is not a strength of mine. I make delicious tacos, I have around 70 Fortnite wins. My mom says that I am super talented.</p>
+
+                        <p class="answer2">HELLO I WORK</p>
+
+                        <p class="answer3">HA I WAS RIGHT</p>
+
+                        <p class="answer4">4</p>
+
+                        <p class="answer5">5</p>
 
                         <h4 class="interviewQuestion">Where do you see yourself in five years?</h4>
                         <p class="answer1">I'm thinking that in five years, I'll probably be trying to grow my personal brand as a hip-hop artist. I'm hoping you give me this job but this isn't going to be my career if you know what I mean. I've never been a kiss up. I-- it's just not how I operate. I mean I've always subscribed to the idea that if you really want to impress your boss, you go in there and you do mediocre work, half-heartedly.</p>
 
+                        <p class="answer2">HELLO I WORK</p>
+
+                        <p class="answer3">HA I WAS RIGHT</p>
+
+                        <p class="answer4">4</p>
+
+                        <p class="answer5">5</p>
+
                         <h4 class="interviewQuestion">Do you have any questions for us?</h4>
                         <p class="answer1">Negativo, boss! Crushed it.</p>
+
+                        <p class="answer2">HELLO I WORK</p>
+
+                        <p class="answer3">HA I WAS RIGHT</p>
+
+                        <p class="answer4">4</p>
+
+                        <p class="answer5">5</p>
                     </div>
-                    <p class="answer2">HELLO I WORK</p>
-                    <p class="answer3">HA I WAS RIGHT</p>
-                    <p class="answer4">4</p>
-                    <p class="answer5">5</p>
                 </div>
                 <button class="resetButton">Reset</button>
             </div>
-        </main>
     </div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <!-- <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
