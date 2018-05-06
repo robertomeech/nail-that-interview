@@ -48,6 +48,14 @@ header {
     }
 }
 
+
+
+@media(max-width: 966px) {
+    header .headerText {
+        transform: translateY(50%)
+    }
+}
+
 @media(max-width: 320px) {
 
     header .headerText {

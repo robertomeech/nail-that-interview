@@ -233,6 +233,12 @@ header {
       background: #66b2b7;
       color: white; }
 
+@media (max-width: 966px) {
+  header .headerText {
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%); } }
+
 @media (max-width: 320px) {
   header .headerText {
     -webkit-transform: translateY(20%);
@@ -373,13 +379,12 @@ label.container {
 .answerWrapper {
   display: none;
   width: 70%;
-  margin: 0 auto;
-  height: 100vh; }
+  margin: 0 auto; }
 
 .answers {
   margin: 50px 0; }
 
-.answers p {
+.answerWrapper p {
   display: none;
   font-family: "Muli", sans-serif;
   font-size: 2rem;
@@ -415,7 +420,7 @@ label.container {
   .resetButton:hover {
     background: #66b2b7; }
 
-.resetButton a:hover {
+button.resetButton:hover {
   color: white; }
 
 .twitter-share-button {
@@ -428,8 +433,10 @@ label.container {
   flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 25px; }
 
 @media (max-width: 320px) {
-  p {
+  .answerWrapper .answers p.answer {
     font-size: 1rem; } }

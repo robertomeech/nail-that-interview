@@ -13,15 +13,18 @@ $(function(){
 
     });
     
-    $('.resetButton').on('click', function(){
-        console.log('click');
-        $('#quiz')[0].reset();
-        $('.answerWrapper').hide();
-        $('#quiz').show();
-    });
+    
+    //Form Reset
+    $('.resetButton').on('click', function (e) {
+        e.preventDefault();
+        console.log('reset');
+        window.location.reload(true);
+    }); 
 
+
+    //SMOOTH SCROLL
     $('.headerText a, .question1 a, #question2 a, #question3 a, #question4 a, #submitButton').smoothScroll()({
-        speed: 8000,
+        speed: 800,
     });
     
     function getValue() {
@@ -62,7 +65,7 @@ $(function(){
 
 }); 
 
-//  < !--TWITTER WIDGET -->
+//TWIITER
 window.twttr = (function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0],
         t = window.twttr || {};
