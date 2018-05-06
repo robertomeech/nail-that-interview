@@ -1,11 +1,14 @@
 .headerWrapper{
     width: 70%;
-    margin: 0 auto;
     text-align: center;
     display: flex;
-    justify-content: center;
     align-items: center;
+    margin: 0 auto;
     
+}
+
+div#headerTop.headerWrapper {
+    margin: 0;
 }
 
 header {
@@ -53,6 +56,16 @@ header {
 @media(max-width: 966px) {
     header .headerText {
         transform: translateY(50%)
+    }
+}
+
+@media(max-width: 500px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .wrapper {
+        width: 90%;
     }
 }
 

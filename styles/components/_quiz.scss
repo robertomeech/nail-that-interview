@@ -102,6 +102,15 @@ label.container {
 }
 
 
+@media(max-width: 540px) {
+    li {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+ }
+
+
+
 @media(max-width: 320px) {
     h4 {
         font-size: 1.5rem;

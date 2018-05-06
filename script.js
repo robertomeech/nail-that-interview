@@ -24,8 +24,8 @@ $(function(){
 
 
     //SMOOTH SCROLL
-    $('.headerText a, .question1 a, #question2 a, #question3 a, #question4 a, #submitButton').smoothScroll()({
-        speed: 800,
+    $('.headerText a, .question1 a, #question2 a, #question3 a, #question4 a').smoothScroll({
+        speed: 1000,
     });
     
     function getValue() {
@@ -40,7 +40,12 @@ $(function(){
     }
     
     function showResults(quizResults) {
-        $('.answerWrapper').fadeIn(800);
+        $('.answerWrapper').fadeIn(1000);
+        // animate to the top of '.answerWrapper'
+        // -50px is the margin top you have set on your '.answers'
+        // 800 is the duration of the scrolling
+        $('html').animate({ scrollTop: $('.answerWrapper').offset().top - 50 }, 1000);
+
         $('.answers p').hide();
         if (quizResults <= 8 && quizResults >= 0) {
             //if between 0 and 8
