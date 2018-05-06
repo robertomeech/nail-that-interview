@@ -6,6 +6,7 @@ $(function(){
         event.preventDefault();
 
         $('#quiz').hide();
+        $('header').hide();
         //Get the sum of the selected inputs
         let quizResults = getValue();
         // Conditionally show answer based on quiz results
@@ -17,7 +18,7 @@ $(function(){
     //Form Reset
     $('.resetButton').on('click', function (e) {
         e.preventDefault();
-        console.log('reset');
+        // console.log('reset');
         window.location.reload(true);
     }); 
 
