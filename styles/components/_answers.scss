@@ -3,6 +3,10 @@
     display: none;
     width: 70%;
     margin: 0 auto;
+    height: 100vh;
+}
+.answers {
+    margin: 50px 0;
 }
 
 .answers p {
@@ -10,4 +14,45 @@
     font-family: $accentFont;
     font-size: 2rem;
     line-height: 1.75;
+}
+
+.resetButton {
+    padding: 2%;
+        width: 150px;
+        background: #64dce5;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        color: black;
+        transition: all 0.5s ease;
+        align-items: center;
+        border: none;
+        font-family: $baseFont;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        &:hover {
+            background: #66b2b7;
+        }
+}
+
+.resetButton a:hover {
+    color: white;
+}
+
+.twitter-share-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 320px) {
+    p {
+        font-size: 1rem;
+    }
 }

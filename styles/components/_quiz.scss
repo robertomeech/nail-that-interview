@@ -23,15 +23,28 @@ form {
     ul {
         text-align: left;
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
          li {
             list-style: none;
             text-align: left;
             display: flex;
+            align-items: center;
             &:last-of-type {
                 margin-bottom: 55px;
             }        
         }
     }
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 25px;
+}
+
+label.container {
+    display: flex;
+    align-items: center;
 }
 
 .question {
@@ -45,7 +58,7 @@ form {
     }
     a {
         padding: 2%;
-        width: 15%;
+        width: 150px;
         background: #64dce5;
         display: flex;
         justify-content: center;
@@ -69,7 +82,7 @@ form {
 
 .submitButton {
         padding: 2%;
-        width: 15%;
+        width: 150px;
         background: #64dce5;
         display: flex;
         justify-content: center;
@@ -86,5 +99,15 @@ form {
             background: #66b2b7;
             color: white;
         }
+}
+
+
+@media(max-width: 320px) {
+    h4 {
+        font-size: 1.5rem;
+    }
+    li {
+        font-size: 1rem;
+    }
 }
 

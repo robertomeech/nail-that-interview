@@ -4,6 +4,8 @@ $(function(){
     $('#quiz').submit(function(event){
         //Prevent page from refreshing
         event.preventDefault();
+
+        $('#quiz').hide();
         //Get the sum of the selected inputs
         let quizResults = getValue();
         // Conditionally show answer based on quiz results
@@ -15,10 +17,11 @@ $(function(){
         console.log('click');
         $('#quiz')[0].reset();
         $('.answerWrapper').hide();
+        $('#quiz').show();
     });
 
     $('.headerText a, .question1 a, #question2 a, #question3 a, #question4 a, #submitButton').smoothScroll()({
-        speed: 3000,
+        speed: 8000,
     });
     
     function getValue() {
@@ -33,7 +36,7 @@ $(function(){
     }
     
     function showResults(quizResults) {
-        $('.answerWrapper').fadeIn();
+        $('.answerWrapper').fadeIn(800);
         $('.answers p').hide();
         if (quizResults <= 8 && quizResults >= 0) {
             //if between 0 and 8
@@ -57,4 +60,21 @@ $(function(){
     
     }
 
-});    
+}); 
+
+//  < !--TWITTER WIDGET -->
+window.twttr = (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+
+    t._e = [];
+    t.ready = function (f) {
+        t._e.push(f);
+    };
+    return t;
+}(document, "script", "twitter-wjs"));

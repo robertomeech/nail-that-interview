@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="headerWrapper">
+        <div class="headerWrapper" id="headerTop">
             <div class="headerText">
                 <h1>Nail That Interview</h1>
                 <h3>Need dat moolah? Get yourself a job interview and this app will get you the job. Guaranteed.</h3>
@@ -25,32 +25,32 @@
                     <h4>How badly do you want this job?</h4>
                         <ul>
                             <li>
-                                <label for="" class="container">
-                                    <input type="radio" value="1" name="howBadly" required>
+                                <label for="nothing" class="container">
+                                    <input type="radio" value="1" name="howBadly" id="nothing" required>
                                     I have nothing better to do.
                                 </label>
                             </li>
                             <li>
-                                <label for="" class="container">
-                                    <input type="radio" value="2" name="howBadly" required>
+                                <label for="parents" class="container">
+                                    <input type="radio" value="2" name="howBadly" id="parents" required>
                                     My parents made me apply
                                 </label>
                             </li>
                             <li>
-                                <label for="" class="container">
-                                    <input type="radio" value="3" name="howBadly" required>
+                                <label for="firstDay" class="container">
+                                    <input type="radio" value="3" name="howBadly" id="firstDay" required>
                                     I thought this was my first day.
                                 </label>
                             </li>
                             <li>
-                                <label for="" class="container">
-                                    <input type="radio" value="4" name="howBadly" required>
+                                <label for="arrogant" class="container">
+                                    <input type="radio" value="4" name="howBadly" id="arrogant" required>
                                     This company wants ME. I should’ve been headhunted by now…
                                 </label>
                             </li>
                             <li>
-                                <label for="" class="container">
-                                    <input type="radio" value="5" name="howBadly" required>
+                                <label for="dreamJob" class="container">
+                                    <input type="radio" value="5" name="howBadly" id="dreamJob" required>
                                     OMG it’s my dream job.
                                 </label>
                             </li>
@@ -61,24 +61,24 @@
                     <h4>Is this job in your field?</h4>
                         <ul>
                             <li>
-                                <input type="radio" value="1" name="field" required>
-                                <label for="">No…? It’s downtown.</label>
+                                <input type="radio" value="1" name="field" id="downtown" required>
+                                <label for="downtown">No…? It’s downtown.</label>
                             </li>
                             <li>
-                                <input type="radio" value="2" name="field" required>
-                                <label for="">I once took an intro course in first year!</label>
+                                <input type="radio" value="2" name="field" id="introCourse" required>
+                                <label for="introCourse">I once took an intro course in first year!</label>
                             </li>
                             <li>
-                                <input type="radio" value="3" name="field" required>
-                                <label for="">I guess so.</label>
+                                <input type="radio" value="3" name="field" id="guessSo" required>
+                                <label for="guessSo">I guess so.</label>
                             </li>
                             <li>
-                                <input type="radio" value="4" name="field" required>
-                                <label for="">I have so many skills. Everything is in my field.</label>
+                                <input type="radio" value="4" name="field" id="skillful" required>
+                                <label for="skillful">I have so many skills. Everything is in my field.</label>
                             </li>
                             <li>
-                                <input type="radio" value="5" name="field" required>
-                                <label for="">Hundo P! It was my major.</label>
+                                <input type="radio" value="5" name="field" id="hundoP" required>
+                                <label for="hundoP">Hundo P! It was my major.</label>
                             </li>
                         </ul>
                         <a href="#question3">NEXT</a>
@@ -87,24 +87,24 @@
                     <h4>How much time will you spend preparing?</h4>
                         <ul>
                             <li>
-                                <input type="radio" value="1" name="prep" required>
-                                <label for="">I'm going to wing it.</label>
+                                <input type="radio" value="1" name="prep" id="wings" required>
+                                <label for="wings">I'm going to wing it.</label>
                             </li>
                             <li>
-                                <input type="radio" value="2" name="prep" required>
-                                <label for="">I'll Google it on my way there.</label>
+                                <input type="radio" value="2" name="prep" id="google" required>
+                                <label for="google">I'll Google it on my way there.</label>
                             </li>
                             <li>
-                                <input type="radio" value="3" name="prep" required>
-                                <label for="">An hour or so.</label>
+                                <input type="radio" value="3" name="prep" id="hour" required>
+                                <label for="hour">An hour or so.</label>
                             </li>
                             <li>
-                                <input type="radio" value="4" name="prep" required>
-                                <label for="">Imma 👟in</label>
+                                <input type="radio" value="4" name="prep" id="shoeIn" required>
+                                <label for="shoeIn">Imma 👟in</label>
                             </li>
                             <li>
-                                <input type="radio" value="5" name="prep" required>
-                                <label for="">I'll be studying for hours and hours and hours until I know everything about the company.</label>
+                                <input type="radio" value="5" name="prep" id="keener" required>
+                                <label for="keener">I'll be studying for hours and hours and hours until I know everything about the company.</label>
                             </li>
                         </ul>
                         <a href="#question4">NEXT</a>
@@ -113,24 +113,24 @@
                     <h4>What will you you wear?</h4>
                         <ul>
                             <li>
-                                <input type="radio" value="1" name="outfit" required>
-                                <label for="">A Justin Bieber Purpose Tour hoodie obviously, whatchu mean?</label>
+                                <input type="radio" value="1" name="outfit" id="bieber" required>
+                                <label for="bieber">A Justin Bieber Purpose Tour hoodie obviously, whatchu mean?</label>
                             </li>
                             <li>
-                                <input type="radio" value="2" name="outfit" required>
-                                <label for="">My most colourful American Eagle polo with the collar popped - Swag.</label>
+                                <input type="radio" value="2" name="outfit" id="swag" required>
+                                <label for="swag">My most colourful American Eagle polo with the collar popped - Swag.</label>
                             </li>
                             <li>
-                                <input type="radio" value="3" name="outfit" required>
-                                <label for="">Plain tee and jeans.</label>
+                                <input type="radio" value="3" name="outfit" id="plain" required>
+                                <label for="plain">Plain tee and jeans.</label>
                             </li>
                             <li>
-                                <input type="radio" value="4" name="outfit" required>
-                                <label for="">"Versace, Versace, just bought me a house cuz I'm playing Monopoly."</label>
+                                <input type="radio" value="4" name="outfit" id="fancy" required>
+                                <label for="fancy">"Versace, Versace, just bought me a house cuz I'm playing Monopoly."</label>
                             </li>
                             <li>
-                                <input type="radio" value="5" name="outfit" required>
-                                <label for="">Something dressy, but not too, too dressy.</label>
+                                <input type="radio" value="5" name="outfit" id="dressy" required>
+                                <label for="dressy">Something dressy, but not too, too dressy.</label>
                             </li>
                         </ul>
                         <a href="#question5">NEXT</a>
@@ -139,24 +139,24 @@
                     <h4>How will you stand out from other applicants?</h4>
                     <ul>
                         <li>
-                            <input type="radio" value="1" name="unique" required>
-                            <label for="">Isn't that why I bought this app?</label>
+                            <input type="radio" value="1" name="unique" id="clueless" required>
+                            <label for="clueless">Isn't that why I bought this app?</label>
                         </li>
                         <li>
-                            <input type="radio" value="2" name="unique" required>
-                            <label for="">I'll give him a copy of my mixtape. #AlwaysPlug</label>
+                            <input type="radio" value="2" name="unique" id="rapper" required>
+                            <label for="rapper">I'll give him a copy of my mixtape. #AlwaysPlug</label>
                         </li>
                         <li>
-                            <input type="radio" value="3" name="unique" required>
-                            <label for="">I've been practicing my handshake. It's assertive, yet sensitive.</label>
+                            <input type="radio" value="3" name="unique" id="business" required>
+                            <label for="business">I've been practicing my handshake. It's assertive, yet sensitive.</label>
                         </li>
                         <li>
-                            <input type="radio" value="4" name="unique" required>
-                            <label for="">Ha! Please. 😒 </label>
+                            <input type="radio" value="4" name="unique" id="sarcastic" required>
+                            <label for="sarcastic">Ha! Please. 😒 </label>
                         </li>
                         <li>
-                            <input type="radio" value="5" name="unique" required>
-                            <label for="">I'll ask questions about the position, talk about the weather, and show pictures of my dream dogs.</label>
+                            <input type="radio" value="5" name="unique" id="dogs" required>
+                            <label for="dogs">I'll ask questions about the position, talk about the weather, and show pictures of my dream dogs.</label>
                         </li>
                     </ul>
                     <input type="submit" class="submitButton" value="Get Hired!" id="submitButton">
@@ -234,8 +234,13 @@
                         <p class="answer5">5</p>
                     </div>
                 </div>
-                <button class="resetButton">Reset</button>
+                <button class="resetButton"><a href="#headerTop">Reset</a></button>
+                <!-- Twitter Icon -->
+                <a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large" data-text="I want my money back!!!"
+                    data-url="">
+                    Tweet</a>
             </div>
+
     </div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <!-- <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> -->
