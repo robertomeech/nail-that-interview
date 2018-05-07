@@ -59,6 +59,12 @@ header {
     }
 }
 
+@media (max-width:640px) {
+  header {
+    background-attachment:initial;
+  }
+}
+
 @media(max-width: 500px) {
     h1 {
         font-size: 3rem;

@@ -31,11 +31,17 @@ form {
             text-align: left;
             display: flex;
             align-items: center;
+            transition: color 0.25s ease;
             &:last-of-type {
                 margin-bottom: 55px;
-            }        
-        }
+            }   
+        }     
     }
+    }
+
+
+form ul li:hover {
+    color: #64dce5;
 }
 
 input[type="checkbox"], input[type="radio"] {
@@ -76,7 +82,6 @@ label.container {
             color: white;
         }
 }
-
     }
     
 

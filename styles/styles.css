@@ -239,6 +239,10 @@ header {
     -ms-transform: translateY(50%);
     transform: translateY(50%); } }
 
+@media (max-width: 640px) {
+  header {
+    background-attachment: initial; } }
+
 @media (max-width: 500px) {
   h1 {
     font-size: 3rem; }
@@ -300,9 +304,15 @@ form {
       display: flex;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+      -webkit-transition: color 0.25s ease;
+      -o-transition: color 0.25s ease;
+      transition: color 0.25s ease; }
       form ul li:last-of-type {
         margin-bottom: 55px; }
+
+form ul li:hover {
+  color: #64dce5; }
 
 input[type="checkbox"], input[type="radio"] {
   margin-right: 25px; }
