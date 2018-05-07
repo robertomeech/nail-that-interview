@@ -41,9 +41,9 @@ $(function(){
     
     function showResults(quizResults) {
         $('.answerWrapper').fadeIn(1000);
-        // animate to the top of '.answerWrapper'
-        // -50px is the margin top you have set on your '.answers'
-        // 800 is the duration of the scrolling
+        // Animate to the top of '.answerWrapper'
+        // -50px to compensate for margin-top on '.answers'
+        // 1000 is the duration
         $('html').animate({ scrollTop: $('.answerWrapper').offset().top - 50 }, 1000);
 
         $('.answers p').hide();
@@ -66,9 +66,7 @@ $(function(){
             //if between 22 and 25
             $('.answer5').fadeIn();
         }
-    
     }
-
 }); 
 
 //TWIITER

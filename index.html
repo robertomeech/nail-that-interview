@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+    <!-- HEADER STARTS -->
     <header>
         <div class="headerWrapper">
             <div class="headerText">
@@ -18,123 +19,136 @@
             </div>
         </div>
     </header>
+    <!-- HEADER ENDS -->
+    <!-- MAIN STARTS -->
     <main>
-         <div class="wrapper">
+        <!-- WRAPPER DIV STARTS -->
+        <div class="wrapper">
+            <!-- QUIZ FORM STARTS -->
             <form action="" id="quiz">
+                <!-- Question 1 -->
                 <div class="question question1" id="quiz" class="smoothScroll">
                     <h4>How badly do you want this job?</h4>
-                        <ul>
-                            <li>
-                                <label for="nothing" class="container">
-                                    <input type="radio" value="1" name="howBadly" id="nothing" required>
-                                    I have nothing better to do.
-                                </label>
-                            </li>
-                            <li>
-                                <label for="parents" class="container">
-                                    <input type="radio" value="2" name="howBadly" id="parents" required>
-                                    My parents made me apply
-                                </label>
-                            </li>
-                            <li>
-                                <label for="firstDay" class="container">
-                                    <input type="radio" value="3" name="howBadly" id="firstDay" required>
-                                    I thought this was my first day.
-                                </label>
-                            </li>
-                            <li>
-                                <label for="arrogant" class="container">
-                                    <input type="radio" value="4" name="howBadly" id="arrogant" required>
-                                    This company wants ME. 
-                                </label>
-                            </li>
-                            <li>
-                                <label for="dreamJob" class="container">
-                                    <input type="radio" value="5" name="howBadly" id="dreamJob" required>
-                                    OMG it’s my dream job.
-                                </label>
-                            </li>
-                        </ul>
-                        <a href="#question2">NEXT</a>
+                    <ul>
+                        <li>
+                            <label for="nothing" class="container">
+                                <input type="radio" value="1" name="howBadly" id="nothing" required>
+                                I have nothing better to do.
+                            </label>
+                        </li>
+                        <li>
+                            <label for="parents" class="container">
+                                <input type="radio" value="2" name="howBadly" id="parents" required>
+                                My parents made me apply.
+                            </label>
+                        </li>
+                        <li>
+                            <label for="firstDay" class="container">
+                                <input type="radio" value="3" name="howBadly" id="firstDay" required>
+                                I thought this was my first day.
+                            </label>
+                        </li>
+                        <li>
+                            <label for="arrogant" class="container">
+                                <input type="radio" value="4" name="howBadly" id="arrogant" required>
+                                This company wants ME. 
+                            </label>
+                        </li>
+                        <li>
+                            <label for="dreamJob" class="container">
+                                <input type="radio" value="5" name="howBadly" id="dreamJob" required>
+                                OMG it’s my dream job.
+                            </label>
+                        </li>
+                    </ul>
+                    <a href="#question2">NEXT</a>
                 </div>
+
+                <!-- Question 2 -->
                 <div class="question smoothScroll" id="question2">
                     <h4>Is this job in your field?</h4>
-                        <ul>
-                            <li>
-                                <input type="radio" value="1" name="field" id="downtown" required>
-                                <label for="downtown">No…? It’s downtown.</label>
-                            </li>
-                            <li>
-                                <input type="radio" value="2" name="field" id="introCourse" required>
-                                <label for="introCourse">I took an intro course in first year!</label>
-                            </li>
-                            <li>
-                                <input type="radio" value="3" name="field" id="guessSo" required>
-                                <label for="guessSo">I guess so.</label>
-                            </li>
-                            <li>
-                                <input type="radio" value="4" name="field" id="skillful" required>
-                                <label for="skillful">Everything is in my field.</label>
-                            </li>
-                            <li>
-                                <input type="radio" value="5" name="field" id="hundoP" required>
-                                <label for="hundoP">Hundo P! It was my major.</label>
-                            </li>
-                        </ul>
-                        <a href="#question3">NEXT</a>
+                    <ul>
+                        <li>
+                            <input type="radio" value="1" name="field" id="downtown" required>
+                            <label for="downtown">No…? It’s downtown.</label>
+                        </li>
+                        <li>
+                            <input type="radio" value="2" name="field" id="introCourse" required>
+                            <label for="introCourse">I took an intro course in first year!</label>
+                        </li>
+                        <li>
+                            <input type="radio" value="3" name="field" id="guessSo" required>
+                            <label for="guessSo">I guess so.</label>
+                        </li>
+                        <li>
+                            <input type="radio" value="4" name="field" id="skillful" required>
+                            <label for="skillful">Everything is in my field.</label>
+                        </li>
+                        <li>
+                            <input type="radio" value="5" name="field" id="hundoP" required>
+                            <label for="hundoP">Hundo P! It was my major.</label>
+                        </li>
+                    </ul>
+                    <a href="#question3">NEXT</a>
                 </div>
+
+                <!-- Question 3 -->
                 <div class="question smoothScroll" id="question3">
                     <h4>How much time will you spend preparing?</h4>
-                        <ul>
-                            <li>
-                                <input type="radio" value="1" name="prep" id="wings" required>
-                                <label for="wings">I'm going to wing it.</label>
-                            </li>
-                            <li>
-                                <input type="radio" value="2" name="prep" id="google" required>
-                                <label for="google">I'll Google it on my way there.</label>
-                            </li>
-                            <li>
-                                <input type="radio" value="3" name="prep" id="hour" required>
-                                <label for="hour">An hour or so.</label>
-                            </li>
-                            <li>
-                                <input type="radio" value="4" name="prep" id="shoeIn" required>
-                                <label for="shoeIn">I don't need to prepare.</label>
-                            </li>
-                            <li>
-                                <input type="radio" value="5" name="prep" id="keener" required>
-                                <label for="keener">I'll be up for hours!</label>
-                            </li>
-                        </ul>
-                        <a href="#question4">NEXT</a>
+                    <ul>
+                        <li>
+                            <input type="radio" value="1" name="prep" id="wings" required>
+                            <label for="wings">I'm going to wing it.</label>
+                        </li>
+                        <li>
+                            <input type="radio" value="2" name="prep" id="google" required>
+                            <label for="google">I'll Google it on my way there.</label>
+                        </li>
+                        <li>
+                            <input type="radio" value="3" name="prep" id="hour" required>
+                            <label for="hour">An hour or so.</label>
+                        </li>
+                        <li>
+                            <input type="radio" value="4" name="prep" id="shoeIn" required>
+                            <label for="shoeIn">I don't need to prepare.</label>
+                        </li>
+                        <li>
+                            <input type="radio" value="5" name="prep" id="keener" required>
+                            <label for="keener">I'll be up for hours!</label>
+                        </li>
+                    </ul>
+                    <a href="#question4">NEXT</a>
                 </div>
+
+                <!-- Question 4 -->
                 <div class="question smoothScroll" id="question4">
                     <h4>What will you you wear?</h4>
-                        <ul>
-                            <li>
-                                <input type="radio" value="1" name="outfit" id="bieber" required>
-                                <label for="bieber">Bieber Purpose Tour hoodie obvs.</label>
-                            </li>
-                            <li>
-                                <input type="radio" value="2" name="outfit" id="swag" required>
-                                <label for="swag">My swaggiest outfit.</label>
-                            </li>
-                            <li>
-                                <input type="radio" value="3" name="outfit" id="plain" required>
-                                <label for="plain">Plain tee and jeans.</label>
-                            </li>
-                            <li>
-                                <input type="radio" value="4" name="outfit" id="fancy" required>
-                                <label for="fancy">Everything designer.</label>
-                            </li>
-                            <li>
-                                <input type="radio" value="5" name="outfit" id="dressy" required>
-                                <label for="dressy">Something dressy.</label>
-                            </li>
-                        </ul>
-                        <a href="#question5">NEXT</a>
+                    <ul>
+                        <li>
+                            <input type="radio" value="1" name="outfit" id="bieber" required>
+                            <label for="bieber">Bieber Purpose Tour hoodie obvs.</label>
+                        </li>
+                        <li>
+                            <input type="radio" value="2" name="outfit" id="swag" required>
+                            <label for="swag">My swaggiest outfit.</label>
+                        </li>
+                        <li>
+                            <input type="radio" value="3" name="outfit" id="plain" required>
+                            <label for="plain">Plain tee and jeans.</label>
+                        </li>
+                        <li>
+                            <input type="radio" value="4" name="outfit" id="fancy" required>
+                            <label for="fancy">Everything designer.</label>
+                        </li>
+                        <li>
+                            <input type="radio" value="5" name="outfit" id="dressy" required>
+                            <label for="dressy">Something dressy.</label>
+                        </li>
+                    </ul>
+                    <a href="#question5">NEXT</a>
                 </div>
+
+                <!-- Question 5 -->
                 <div class="question smoothScroll" id="question5">
                     <h4>How will you stand out from other applicants?</h4>
                     <ul>
@@ -161,81 +175,72 @@
                     </ul>
                     <input type="submit" class="submitButton" value="Get Hired!" id="submitButton">
                 </div>
-                
             </form>
-        </main>
+            <!-- QUIZ FORM ENDS -->
+        </div>
+        <!-- WRAPPER DIV ENDS -->
+    </main>
+        <!-- MAIN ENDS -->
             <div class="answerWrapper">
                 <div class="answers">
                     <div>
+                        <!-- Interview Question 1 -->
                         <h4 class="interviewQuestion">Can you tell us about yourself?</h4>
+
                         <p class="answer1 answer">Errrr... What do you want to know?</p>
-
-                        <p class="answer2 answer">I have around 10 years of management experience. Yeah, I manage like five fantasy football teams every year. I've seen every Jurasic Park movie hundreds of times. I know every single line, down to the last roar.</p>
-
-                        <p class="answer3 answer">Let me answer your question with a question: What can you tell me about the pay?</p>
-
+                        <p class="answer2 answer">I have around 10 years of management experience. Yeah, I manage like five fantasy football teams every year. I've seen every Jursasic Park movie hundreds of times. I know every single line, down to the last roar. I'm actually fairly positive I'm fluent in velocirapter at this point.</p>
+                        <p class="answer3 answer">I could tell you a lot. But let me answer your question with a question: What can you tell me about the pay and do you pay for meals? If so, just know I'll want tacos the majority of the time.</p>
                         <p class="answer4 answer">I have the appropriate experience but I have a lot going on in my personal life.. Work/life balance is really important
                         to me. I am an aspiring YouTuber so I’m not sure if I’d be committed long term.</p>
-
                         <p class="answer5 answer">I have extensive experience in this field, I'm driven and I drive a hybrid.</p>
 
+                        <!-- Interview Question 2 -->
                         <h4 class="interviewQuestion">Why do you want to work for us?</h4>
+
                         <p class="answer1 answer"> I’ll be straight up with you because honesty is always the best policy. My bestie sent me a Snapchat showing off the new Fortnite skin he bought and I need to get it. Trust me, I wouldn’t be here if I wasn’t serious. I definitely need the money because I spent the last of my student loan on a Supreme t-shirt last week.</p>
-
                         <p class="answer2 answer">My parents really want me to start figuring my life out or something like that. </p>
-
                         <p class="answer3 answer">I have a couple friends that work for the company as well and I think it would be totally rad to be able to work together!</p>
-
                         <p class="answer4 answer">I'm bored of my current job, it's way too easy.</p>
-
                         <p class="answer5 answer">I have been in my current role for some time now, and I don’t see much development if I stay. I’m looking to grow my career,
                         and I am ready for a new challenge. I've also heard great things about the company culture. Is it true that dogs are allowed in the office?!</p>
 
+                        <!-- Interview Question 3 -->
                         <h4 class="interviewQuestion">Why would you be a valuable asset to our team?</h4>
+
                         <p class="answer1 answer"> Now we’re talkin’! I was the captain of my ultimate frisbee team in grade 7 (based on a true story) so you already know I know how to lead a team. As for being valuable… I was second runner up to the MVP… NEXT QUESTION!</p>
+                        <p class="answer2 answer">I think I'd be an asset just because I'm real, you know? I'm going to tell you things straight up and I have my priorities straight in life. I'm not even really sure what this position entails but what I am sure about is that I can do most things I set my mind to, if I feel like it.</p>
+                        <p class="answer3 answer">I would get along with some of your employees because I know a few of them already. Let's just say if I was an Apple product, I'd be called iWork because it's true. I do indeed work. Don't ask about the specifics. Just know that I work. You need people that work. Enough said.</p>
+                        <p class="answer4 answer">Well I'd bring you so much business. I'm lowkey pseudo-famous in Hamilton. I have over 8000 followers on my Instagram account... So... yeah. I'll post a pic of the office with a Buenos Aires filter and you'll see what happens.</p>
+                        <p class="answer5 answer">I'd be an asset to the team because I always give 120%. I bake so I'd bring lots of goodies to the office. I've never backed down from a challenge and I love to learn.</p>
 
-                        <p class="answer2 answer">HELLO I WORK</p>
-
-                        <p class="answer3 answer">HA I WAS RIGHT</p>
-
-                        <p class="answer4 answer">4</p>
-
-                        <p class="answer5 answer">5</p>
-
+                        <!-- Interview Question 4 -->
                         <h4 class="interviewQuestion">What are your strengths and weaknesses?</h4>
-                        <p class="answer1 answer">First things first, amaryllis. Get it?! Like the flower?... That song by Iggy? No? Clearly humour is not a strength of mine. I make delicious tacos, I have around 70 Fortnite wins. My mom says that I am super talented.</p>
 
-                        <p class="answer2 answer">HELLO I WORK</p>
-
-                        <p class="answer3 answer">HA I WAS RIGHT</p>
-
+                        <p class="answer1 answer">First things first, amaryllis. Get it?! Like the flower?... That song by Iggy? No? Clearly humour is not a strength of mine. I make delicious tacos, I have around 70 Fortnite wins. My mom says that I am super talented at everything.</p>
+                        <p class="answer2 answer">I'm proficient with Instagram, Twitter, Snapchat, Facebook, Youtube, Netlfix, Tumblr, and Google. I'm basically a jack of all trades, except for trading. I suck at trading. I once traded a holographic Charizard for a lollipop.</p>
+                        <p class="answer3 answer">I used to be Assistant to the Regional Manager at a paper company in Pennsylvania until my boss moved to Denver. I'm an incredible salesperson and I own a beet farm,</p>
                         <p class="answer4 answer">Strengths? Um… I’m hard working, organized, energetic, and reliable. Weaknesses? Well.. I am a perfectionist, ya feel me?</p>
-
                         <p class="answer5 answer">In terms of strengths, I am very hard-working, reliable, energetic, and enthusiastic. For as long as I can remember, I’ve
                         enjoyed working and really look at my job as a place of comfort and safety. Weaknesses? Previously, I’ve been a little defensive
                         when it came to constructive criticism. Over the course of the last few years, it’s really been a focus of mine, and with the help of
                         some great leaders, I’ve learned to overcome that.</p>
 
+                        <!-- Interview Question 5 -->
                         <h4 class="interviewQuestion">Where do you see yourself in five years?</h4>
-                        <p class="answer1 answer">I'm thinking that in five years, I'll probably be trying to grow my personal brand as a hip-hop artist. I'm hoping you give me this job but this isn't going to be my career if you know what I mean. I've never been a kiss up. I-- it's just not how I operate. I mean I've always subscribed to the idea that if you really want to impress your boss, you go in there and you do mediocre work, half-heartedly.</p>
 
-                        <p class="answer2 answer">HELLO I WORK</p>
+                        <p class="answer1 answer">I'm thinking that in five years, I'll probably be trying to grow my personal brand as a hip-hop artist. I'm hoping you give me this job but this isn't going to be my career if you know what I mean. I've never been a kiss up. It's just not how I operate. I mean I've always subscribed to the idea that if you really want to impress your boss, you go in there and you do mediocre work, half-heartedly.</p>
+                        <p class="answer2 answer">I hope to be an established foodie. Stretch-goal: to see a Sasquatch.</p>
+                        <p class="answer3 answer">I don't think that far ahead, bud.</p>
+                        <p class="answer4 answer">5 years? I'll probably be in Hollywood by then. Did you not hear me mention that my Instagram account has over 8000 followers? But yeah I'm getting an agent soon. This isn't a joke. </p>
+                        <p class="answer5 answer">In 5 years, I hope to be settled in a career that I love. I will hopefully have a family and really be focused not only on them, but forwarding my career. On a more personal scale, I hope to travel and cross a few countries off my bucket-list.</p>
 
-                        <p class="answer3 answer">HA I WAS RIGHT</p>
-
-                        <p class="answer4 answer">4</p>
-
-                        <p class="answer5 answer">5</p>
-
+                        <!-- Interview Question 6 -->
                         <h4 class="interviewQuestion">Do you have any questions for us?</h4>
+
                         <p class="answer1 answer">Negative, boss! See ya next week!</p>
-
                         <p class="answer2 answer">How much would I be making? Oh and I have a follow-up question: how much do YOU make?</p>
-
                         <p class="answer3 answer">What's the dress code like? Just as a heads up. My doctor says I can't wear ties, button-up shirts, dress shoes, or dress pants.</p>
-
                         <p class="answer4 answer">What are the benefits? One of my friends gets a discount for Louis Vuitton through her work.</p>
-
                         <p class="answer5 answer">I do! How has your experience with the company been?</p>
                     </div>
                 </div>
