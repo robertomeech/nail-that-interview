@@ -18,6 +18,9 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    @media(max-width: 600px) {
+        background-attachment: none;
+    }
     .headerText {
         display: flex;
         flex-direction: column;
